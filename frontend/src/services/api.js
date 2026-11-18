@@ -8,7 +8,7 @@ import { CATEGORIES_CONFIG } from '../data/categories'
    1. AXIOS CLIENT & CONFIGURATION
    ========================================================================== */
 
-const RAW_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
+const RAW_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api/v1'
 export const API_BASE_URL = RAW_BASE_URL.replace(/\/api\/?$/, '').replace(/\/+$/, '')
 
 export const apiClient = axios.create({
